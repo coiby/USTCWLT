@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <EditTextPreference android:title="Username"
+        android:key="username"
+        android:summary="Please provide your username" />
+
+    <EditTextPreference android:title="Password"
+        android:key="password"
+        android:summary="Please provide your password" android:inputType="textPassword" />
+
+    <ListPreference     android:title="网络端口"
+        android:summary="Select network type you want to use"
+        android:key="port"
+        android:defaultValue="0"
+        android:entries="@array/listArray"
+        android:entryValues="@array/listValues" />
+
+</PreferenceScreen>
